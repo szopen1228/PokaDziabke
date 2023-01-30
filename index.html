@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PokaDziabke - Tatuaże Wrocław</title>
+
+    <script src="https://kit.fontawesome.com/939f2cec85.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <section class="First">
+            <img id="logo" src="IMG/logo.png" alt="Logo Poka Dziabke" />
+                <div class="icons" >
+                    <a href="https://www.instagram.com/pokadziabke" rel="noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.tiktok.com/@poka.dziabke" rel="noreferrer" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            <div id="gradient"></div>
+            <p><i class="fa-solid fa-chevron-down"></i></p>
+        </section>
+        
+        <section class="Second">
+            <img class="imgSecond" id="imgJagoda" src="IMG/jagoda.png" alt="Zdjęcie Jagoda"/>
+            <h1>Cześć!</h1>
+            <img class="imgStar" src="IMG/star.png">
+            <div class="text">
+                <h3 id="text">Mam na imię Jagoda i od 2017 roku zajmuję się tatuażem.
+                Skupiam się na wzorach minimalistycznych, liniowych ale moją największą miłością jest mikrorealizm. 
+                Zapraszam do zapoznania się z moim porfolio!</h3>
+                <a href="#Third"><input type="button" value="Zapisz się!"></a>
+            </div>
+        </section>
+
+        <section class="Third" id="Third">
+            <div class="menu">
+                <div class="div1">
+                    <a href="#Fourth"><img class="imgGrid" src="IMG/tattoo.png"></a>
+                </div>
+                <div class="div2">
+                    <img class="imgGrid" src="IMG/lesson.png">
+                </div>
+                <div class="div3">
+                    <img class="imgGrid" src="IMG/shop.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="Fourth" id="Fourth">
+            <h1>Kontakt</h1>
+            <form method="POST" action="https://formsubmit.co/6569e90e8e2ab92fde3ada15d6c18c45" enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="IMIĘ - EMAIL DATA!">
+                <p>Imię:</p><input type="text" name="Imię" placeholder="np. Jan" required>
+                <p>Nazwisko:</p><input type="text" name="Nazwisko" placeholder="np. Kowalski" required>
+                <p>Data Urodzenia:</p><input type="date" name="DataUrodzenia" required>
+                <p>Wielkość tatuażu</p><input class="slider" id="myRange" type="range" min="1" max="100" name="Wielkość" placeholder="np. 30cm" required>
+                <p class="value"><span id="value"></span> cm</p>
+                <p>Miejsce na ciele</p><input type="text" name="MiejsceNaCiele" placeholder="np. Przedramie" required>
+                <p>Adres E-mail:</p><input type="email" name="email" placeholder="np. jkowalski@gmail.com" required>
+                <p>Zdjęcie Inspiracji <h4>( .JPG .PNG 5MB )</h4></p><input type="file" name="attachment" accept="image/png, image/jpeg image/jpg">
+                <p>Dni które Ci nie odpowiadają:<h4>( Sprawdź na jakie terminy aktualnie zapisuję )</h4></p><input type="text" name="DodatkoweInformacje" placeholder="np. Nie pasują mi środy" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                <input type="hidden" name="_template" value="table">
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
