@@ -39,7 +39,6 @@
             <h2 style="grid-area: 2 / 2 / 3 / 3;">( <?php echo $_POST["who"];?> )</h2>
         </div>
     </div> 
-    <a href="index.php"><button>COFNIJ</button></a>
     <button class="exportBtn" onclick="exportPDF()">DRUKUJ</button>
 
     <script src="html2pdf.bundle.min.js"></script>
