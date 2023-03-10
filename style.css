@@ -412,21 +412,25 @@ input[type=button]:hover {
 }
 
 .Fifth h2 {
+    position: relative;
     margin-left: 8%;
     padding-top: 20px;
     font-family: Poiret One;
     font-weight: 800;
     font-size: 40px;
     color: #e28b9b;
+    z-index: 1;
 }
 
 .Fifth p {
+    position: relative;
     width: 50%;
     margin-left: 8%;
     padding-top: 20px;
     font-family: Poiret One;
     font-weight: 600;
     font-size: 30px;
+    z-index: 1;
 }
 
 .Fifth form {
@@ -564,4 +568,18 @@ footer p {
     0% {bottom: 5%;}
     100% {bottom: 0%;
         opacity: 0%;}
+}
+
+@media only screen and (max-width: 1350px) {
+    .Fourth form, .Fourth input, ::placeholder, .Fourth p, .Fourth h4, .info h2 {
+        font-size: 14px;
+    }
+
+    .Fourth h4, .info h5 {
+        font-size: 12px;
+    }
+
+    .text input[type=button] {
+        display: none;
+    }
 }
