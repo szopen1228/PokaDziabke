@@ -587,4 +587,8 @@ footer p {
     .text input[type=button] {
         display: none;
     }
+    
+    .contact {
+        min-height: 500px;
+    }
 }
