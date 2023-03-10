@@ -252,6 +252,7 @@ input[type=button]:hover {
 .contact {
     display: grid;
     position: relative;
+    min-height: 500px;
     margin: 2% 25% 0% 25%;
     text-align: center;
     grid-template-columns: 1fr 1fr;
