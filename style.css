@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container section {
+    position: relative;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.First {
+    background: url("IMG/balcony.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    width: 35%;
+    min-width: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 7px rgba(218, 65, 96, 0.8));
+}
+
+.icons {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.5em;
+    margin-top: 30px;
+    user-select: none;
+    
+}
+
+.First p {
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: fade 2s infinite;
+}
+
+.icons a {
+    font-size: 40px;
+    filter: drop-shadow(0px 0px 5px rgb(218, 65, 96));
+}
+
+.icons :link, .icons :visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.icons :hover {
+    color: rgb(218, 65, 96);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gradient {
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(255, 223, 228,1) 0%, rgba(255,255,255,0) 100%);
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.Second {
+    background: #ffdfe4;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.SecondBackground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.imgSecond {
+    position: absolute;
+    width: 36%;
+    top: 50%;
+    right: 5%;
+    margin-right: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.imgStar {
+    position: absolute;
+    width: 4%;
+    top: 8%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-40%);
+}
+
+.Second h1 {
+    padding: 5%;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 120px;
+    color: #e28b9b;
+}
+
+.text {
+    position: relative;
+    width: 45%;
+    padding-left: 5%;
+    z-index: 1;
+}
+
+.text h3 {
+    font-size: 40px;
+    font-family: Poiret One;
+}
+
+input[type=button] {
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 50px;
+    background-color: #e28b9b;
+    font-family: Poiret One;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+input[type=button]:hover {
+    height: 54px;
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.Third {
+    background: #ffdfe4;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ThirdBackground {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: 0;
+}
+
+.menu {
+    display: grid;
+    padding: 2% 10% 0% 10%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+.div1 {
+    position: relative;
+    grid-area: 1 / 1;
+    margin: 0;
+    padding: 0;
+}
+
+.div2 {
+    position: relative;
+    grid-area: 1 / 2;
+    margin: 0;
+    padding: 0;
+}
+
+.div3 {
+    position: relative;
+    grid-area: 1 / 3;
+    margin: 0;
+    padding: 0;
+}
+
+.imgGrid {
+    position: relative;
+    width: 60%;
+    border-radius: 500px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.imgGrid:hover {
+    width: 61%;
+    filter: grayscale(0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.background {
+    position: absolute;
+    background: url("IMG/tattoo2.png");
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    height: 40vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.backgroundSVG {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.Fourth {
+    background: rgb(255, 223, 228);
+}
+
+.Fourth h1 {
+    margin-left: 5%;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 120px;
+    color: #e28b9b;
+}
+
+.contact {
+    display: grid;
+    position: relative;
+    margin: 2% 25% 0% 25%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh;
+    border-radius: 100px;
+    background-color: white;
+    z-index: 1;
+}
+
+.info {
+    position: relative;
+    grid-area: 1 / 1;
+    height: 100%;
+}
+
+.info h2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: Poiret One;
+    font-size: 2.5vh;
+}
+
+.info h5 {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-family: Poiret One;
+    font-size: 2vh;
+    color: rgb(218, 65, 96)
+}
+
+.map {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 50%;
+    border-radius: 50px;
+    border: none;
+    margin: 50px auto 20px auto;
+}
+
+
+.Fourth form {
+    position: relative;
+    grid-area: 1 / 2;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.Fourth p {
+    padding: 15px 0px 0px 50px;
+    font-family: Poiret One;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
+.Fourth h3, #value {
+    padding-left: 25px;
+    font-family: Poiret One;
+}
+
+.Fourth h4 {
+    padding-left: 50px;
+    font-family: Poiret One;
+    font-size: 14px;
+    font-weight: 800;
+    color: rgb(218, 65, 96);
+}
+
+.Fourth input {
+    display: block;
+    margin: 25px 0px 5px 30px;
+    padding: 0px 20px 0px 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid rgb(218, 65, 96);
+    font-size: 18px;
+    font-family: Arial;
+    width: 60%;
+}
+
+.Fourth input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(218, 65, 96);
+    box-shadow: 0px 2px 0px white;
+}
+
+.Fourth .slider {
+    background: #e28b9b;
+    width: 60%;
+    height: 3px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.Fourth .slider:link {
+    border: none;
+    outline: none;
+}
+
+.Fourth .slider:focus {
+    border: none;
+    outline: none;
+}
+
+.Fourth .slider::-webkit-slider-thumb {
+    width: 10px;
+    height: 20px;
+    background-color: rgb(218, 65, 96);
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-appearance: none;
+}
+
+.Fourth button {
+    background: none;
+    margin: 15px 0px 0px 25px;
+    width: 130px;
+    height: 40px;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 3px solid rgb(218, 65, 96);
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.Fourth button:hover {
+    background-color: rgb(218, 65, 96);
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.Fifth {
+    background: rgb(255, 223, 228);
+}
+
+.Fifth h1 {
+    margin-left: 5%;
+    padding-top: 150px;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 120px;
+    color: #e28b9b;
+}
+
+.Fifth h2 {
+    margin-left: 8%;
+    padding-top: 20px;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 40px;
+    color: #e28b9b;
+}
+
+.Fifth p {
+    width: 50%;
+    margin-left: 8%;
+    padding-top: 20px;
+    font-family: Poiret One;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.Fifth form {
+    position: relative;
+    margin: 25px 0 0 8%;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    z-index: 5;
+}
+
+.Fifth input {
+    display: block;
+    margin: 5px 0px 5px 30px;
+    padding: 10px 20px 10px 20px;
+    background: none;
+    border: 3px solid rgb(218, 65, 96);
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    width: 40%;
+    z-index: 5;
+}
+
+.Fifth button {
+    display: block;
+    margin: 5px 0px 5px 30px;
+    padding: 10px 0px 10px 0px;
+    background: none;
+    border: 3px solid rgb(218, 65, 96);
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Poiret One;
+    font-weight: 1000;
+    text-transform: uppercase;
+    width: 180px;
+    color: black;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.Fifth button:hover{
+    cursor: pointer;
+    width: 200px;
+    background: rgb(218, 65, 96);
+    color: white;
+    transition: 0.5s;
+}
+
+.Fifth input:focus {
+    outline: none;
+    border: 3px solid rgb(218, 65, 96);
+    box-shadow: 2px 2px 0px white;
+    z-index: 5;
+}
+
+.Fifth img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.FifthBackground {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: 0;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.Sixth {
+    background: rgb(255, 223, 228);
+}
+
+.Sixth h1 {
+    margin-left: 5%;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 120px;
+    color: #e28b9b;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+footer {
+    display: block;
+    background-color: #e69faa;
+    font-family: Poiret One;
+    width: 100%;
+    height: 70px;
+}
+
+footer p {
+    padding: 10px 20px 0 0;
+    text-align: right;
+    opacity: 0.8;
+}
+
+::placeholder {
+    color: BLACK;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@keyframes fade {
+    0% {bottom: 5%;}
+    100% {bottom: 0%;
+        opacity: 0%;}
+}
