@@ -501,7 +501,7 @@ input[type=button]:hover {
 /* ////////////////////////////////////////////////////////////////// */
 
 .Sixth {
-    background: rgb(255, 223, 228);
+    background: #e69faa;
 }
 
 .Sixth h1 {
@@ -509,14 +509,33 @@ input[type=button]:hover {
     font-family: Poiret One;
     font-weight: 800;
     font-size: 120px;
-    color: #e28b9b;
+    color: rgb(255, 223, 228); 
+}
+
+.Sixth p {
+    margin-right: 8%;
+    padding-top: 20px;
+    text-align: right;
+    font-family: Poiret One;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+}
+
+.Sixth img {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    height: 60%;
+    z-index: 0;
 }
 
 /* ////////////////////////////////////////////////////////////////// */
 
 footer {
     display: block;
-    background-color: #e69faa;
+    background-color: rgb(255, 223, 228);
     font-family: Poiret One;
     width: 100%;
     height: 70px;
@@ -525,6 +544,7 @@ footer {
 footer p {
     padding: 10px 20px 0 0;
     text-align: right;
+    font-weight: 600;
     opacity: 0.8;
 }
 
