@@ -513,6 +513,10 @@ input[type=button]:hover {
 }
 
 .Sixth p {
+    display: block;
+    position: relative;
+    width: 75%;
+    margin-left: 20%;
     margin-right: 8%;
     padding-top: 20px;
     text-align: right;
@@ -526,8 +530,8 @@ input[type=button]:hover {
 .Sixth img {
     position: absolute;
     top: 20%;
-    left: 2%;
-    height: 60%;
+    left: 1%;
+    width: 27%;
     z-index: 0;
 }
 
