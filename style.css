@@ -717,4 +717,16 @@ footer p {
         margin: 300px auto auto auto;
         width: 200px;
     }
+
+    .text h3 {
+        font-size: 30px;
+    }
+
+    .Fifth h2 {
+        font-size: 30px;
+    }
+    
+    .Fifth p {
+        font-size: 20px;
+    }
 }
