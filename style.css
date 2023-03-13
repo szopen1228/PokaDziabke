@@ -674,6 +674,10 @@ footer p {
     }
 
     .Fourth h4 { 
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    #gradient, .SecondBackground { 
+        bottom: -2px;
     }
 }
