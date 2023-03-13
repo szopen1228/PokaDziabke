@@ -402,11 +402,6 @@ input[type=button]:hover {
 }
 
 .phone {
-    text-align: left;
-    display: block;
-}
-
-.phone2 {
     display: none;
 }
 
@@ -648,6 +643,7 @@ footer p {
     }
 
     .phone {
+        text-align: left;
         display: block;
     }
 
