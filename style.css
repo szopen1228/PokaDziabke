@@ -15,6 +15,7 @@
     background: url("IMG/balcony.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #logo {
@@ -678,6 +679,7 @@ footer p {
 }
 
 @media only screen and (max-width: 560px) {
+
     .imgSecond {
         top: 50%;
     }
