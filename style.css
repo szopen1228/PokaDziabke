@@ -223,6 +223,7 @@ input[type=button]:hover {
     background: url("IMG/tattoo2.png");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     bottom: 0;
     height: 40vh;
     width: 100%;
@@ -277,6 +278,31 @@ input[type=button]:hover {
 }
 
 .info h5 {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-family: Poiret One;
+    font-size: 2vh;
+    color: rgb(218, 65, 96)
+}
+
+.infoPhone {
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+.infoPhone h2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: Poiret One;
+    font-size: 2.5vh;
+}
+
+.infoPhone h5 {
     position: relative;
     display: block;
     text-align: center;
@@ -493,6 +519,7 @@ input[type=button]:hover {
     top: 0;
     right: 0;
     height: 100%;
+    width: auto;
     z-index: 0;
 }
 
@@ -596,6 +623,10 @@ footer p {
         background-size: 400%;
     }
 
+    .contact {
+        margin: 2% 15% 0% 15%;
+    }
+
 }
 
 @media only screen and (max-width: 1081px) {
@@ -616,11 +647,53 @@ footer p {
     .imgSecond {
         width: 60%;
         left: 50%;
-        top: 55%;
+        top: 35%;
         transform: translateX(-50%);
     }
 
     .imgStar {
         display: none;
+    }
+
+    .Third {
+        display: none;
+    }
+
+    .Fourth {
+        background-color: #e69faa;
+    }
+
+    .Fourth h1 {
+        font-weight: 800;
+        font-size: 100px;
+        color: #ffdfe4;
+    }
+    .contact {
+        margin: 2% 5% 0% 5%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .imgSecond {
+        top: 50%;
+    }
+
+    .contact {
+        display: block;
+        text-align: center;
+        border-radius: 100px;
+        background-color: white;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .Fourth form {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 40px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
