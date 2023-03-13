@@ -554,18 +554,41 @@ input[type=button]:hover {
 /* ////////////////////////////////////////////////////////////////// */
 
 footer {
-    display: block;
+    display: grid;
     background-color: rgb(255, 223, 228);
     font-family: Poiret One;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     height: 70px;
+    text-align: center;
 }
 
 footer p {
-    padding: 10px 20px 0 0;
-    text-align: right;
     font-weight: 600;
+    font-size: 20px;
     opacity: 0.8;
+}
+
+.left {
+    padding-left: 5%;
+    text-align: left;
+}
+
+.middle {
+    color: black;
+}
+
+.middle a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 0 6px 0 6px;
+    opacity: 0.8;
+}
+
+.right {
+    padding-right: 5%;
+    text-align: right;
 }
 
 ::placeholder {
@@ -676,6 +699,14 @@ footer p {
         width: 400px;
     }
 
+    #gradient, .SecondBackground { 
+        bottom: -2px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -707,10 +738,6 @@ footer p {
         font-size: 10px;
     }
 
-    #gradient, .SecondBackground { 
-        bottom: -2px;
-    }
-
     .Fifth img {
         display: none;
     }
@@ -729,6 +756,14 @@ footer p {
     }
     
     .Fifth p {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .middle a {
         font-size: 20px;
     }
 }
