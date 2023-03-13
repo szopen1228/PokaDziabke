@@ -401,6 +401,10 @@ input[type=button]:hover {
     transition: 0.3s;
 }
 
+.phone {
+    display: none;
+}
+
 /* ////////////////////////////////////////////////////////////////// */
 
 .Fifth {
@@ -636,6 +640,10 @@ footer p {
 
     .Sixth img { 
         margin-left: -100px;
+    }
+
+    .phone {
+        display: block;
     }
 
 }
