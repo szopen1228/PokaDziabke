@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <title>PDF Generator</title>
+</head>
+<body>
+    <div id="print">
+        <img id="logo" src="IMG/logo.png">
+        <p class="secret">DOKUMENTACJA POUFNA</p>
+        <div class="text">
+            <h1>Protokół powierzenia mienia pracownikowi</h1>
+            <div class="date" style="display: inline"><span id="demo"></span></div>
+            <div class="loc" style="display: inline">Intrum Sp. z o.o.<br>
+                                                    Czesława Miłosza 13,<br>
+                                                    50-304 Wrocław,</div>
+            <h2>reprezentowaną przez: </h2>
+            <h3>Jakub Wawrzyniak</h3>
+            <h4>zwanym dalej <b>Pracodawcą</b>, a</h4>
+            <h3><input type="text"></h3>
+            <h5><input type="work"></h5>
+            <h4>zwanym dalej <b>Pracownikiem</b></h4>
+            <h6>§ 1</h6>
+            <p>1.   Pracownik oświadcza, że przyjmuje odpowiedzialność materialną za mienie powierzone mu przez Pracodawcę z obowiązkiem zwrotu: </p>
+            <p><u>Typ urządzenia:</u> <b><input type="text"></b><p>
+            <p><u>Model:</u> <b><input type="text"></b><p>
+            <p><u>Numer seryjny / IMEI:</u> <b style="text-transform: uppercase;"><input type="text"></b><p>
+            <p><u>Akcesoria:</u> <b><input type="text"></b><p>
+            <p><u>Uwagi:</u> <b><input type="text"></b><p></br>
+            <p>2.	Pracownik oświadcza, że powierzenie mu mienia nastąpiło w sposób prawidłowy oraz potwierdza ilościowy i jakościowy stan mienia.</p>
+        
+        </div>
+            <footer class="footer">
+                <p>Strona <b>1</b> z <b>2</b></p></br>
+                <p style="text-align: right;">(dokument: WEWNĘTRZNY)</p></br>
+                <p>Niniejsze opracowanie stanowi własność intelektualną firmy Intrum Sp. z o. o. podlegającą ochronie na podstawie Ustawy o prawach autorskich i prawach pokrewnych.</p>
+            </footer>
+            <div class="gap"></div>
+            <img id="logo" src="IMG/logo.png">
+            <p class="secret">DOKUMENTACJA POUFNA</p>
+            <div class="text">
+                <h6>§ 2</h6>
+                <p>W związku z przyjęciem odpowiedzialności materialnej za powierzone mienie, Pracownik zobowiązany jest do następujących czynności:</p></br>
+                <p>•	Sprawowania pieczy nad powierzonym mieniem, </br>
+                •	Niezwłocznego informowania bezpośredniego przełożonego o stwierdzonych zagrożeniach dla prawidłowego zabezpieczenia powierzonego mu mienia bądź
+                o brakach w tym zakresie,</br>
+                •	W przypadku utraty urządzenia zgłoś ten fakt jak najszybciej (jednak nie później niż do końca najbliższego dnia roboczego) do zespołu ServiceDesk:</br>
+                Mailowo: <b>pomoc@intrum.pl</b> </br>
+                Telefonicznie: <b>22 576 67 77</b> </br>
+                oraz do Administracji,</br>
+                •	Rozliczenia się z powierzonego mienia,</br>
+                •	Wyrównania wszelkich szkód powstałych w mieniu powierzonym, wynikłych
+                z zawinionego zachowania Pracownika na zasadach określonych w Regulaminie Korzystania z Urządzeń Mobilnych.
+                </p>
+                <h6>§ 3</h6>
+                <p>1.	W zakresie powierzenia mienia zastosowanie mają przepisy Kodeksu pracy oraz rozporządzenia Rady Ministrów z dnia 10 października 1975 r. w sprawie warunków dpowiedzialności materialnej pracowników za szkodę w powierzonym mieniu
+                (Dz. U. z 1996 r. nr 143, poz. 662).</br>
+                2.	Pracodawca  zastrzega  możliwości przeprowadzenia kontroli służbowej poczty elektronicznej zainstalowanej na powierzonym Pracownikowi urządzeniu mobilnym 
+                w celu potwierdzenia właściwego wykorzystania czasu pracy oraz właściwego użytkowania udostępnioego  uzrządzenia.</br></p>
+                <h6>§ 4</h6>
+                <p>Protokół  sporządzono w dwóch jednobrzmiących egzemplarzach, po jednym dla każdej ze stron.</p>
+            </div>
+            <div class="sign">
+                <div style="grid-area: 1 / 1 / 2 / 2;">
+                        <canvas id ="signature-pad" width="1400px" height="500px"></canvas>
+                </div>
+                <h2 style="grid-area: 2 / 1 / 3 / 2; margin-top: -15px;">( Podpis osoby pobierającej )</h2>
+                <div id="sign"><img style="grid-area: 1 / 2 / 2 / 3;" src="IMG/Jakub Wawrzyniak.png">
+                <h2 style="grid-area: 2 / 2 / 3 / 3;">( Podpis osoby wydającej )</h2></div>
+            </div>
+            <button id="confirmBtn" onClick="show()">POTWIERDŹ PODPIS</button>
+            <footer class="footer2">
+                <p>Strona <b>2</b> z <b>2</b></p></br>
+                <p style="text-align: right;">(dokument: WEWNĘTRZNY)</p></br>
+                <p>Niniejsze opracowanie stanowi własność intelektualną firmy Intrum Sp. z o. o. podlegającą ochronie na podstawie Ustawy o prawach autorskich i prawach pokrewnych.</p>
+            </footer>
+    </div> 
+
+    <button id="exportBtn" onclick="exportPDF()">PDF</button>
+    <a href="index.php"><button id="backBtn">COFNIJ</button></a>
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script2.js"></script>
+</body>
+</html>
