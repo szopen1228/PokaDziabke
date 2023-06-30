@@ -365,8 +365,9 @@ input[type=button]:hover {
 .Fourth input[type=checkbox] {
     position: relative;
     display: inline-block;
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
+    width: 0;
 }
 
 .Fourth .slider {
