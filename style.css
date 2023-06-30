@@ -363,8 +363,8 @@ input[type=button]:hover {
 }
 
 .Fourth input[type=checkbox] {
-    position: absolute;
-    left: 0;
+    position: relative;
+    display: inline-block;
 }
 
 .Fourth .slider {
