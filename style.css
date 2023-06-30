@@ -362,6 +362,10 @@ input[type=button]:hover {
     box-shadow: 0px 2px 0px white;
 }
 
+.Fourth input[type=checkbox] {
+    position: absolute;
+}
+
 .Fourth .slider {
     background: #e28b9b;
     width: 60%;
